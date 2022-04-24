@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav__contact{
+    display: flex;
+    justify-content: space-around;
+    max-width: 683px;
+}
+
+.nav__links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav__links a {
+    text-decoration
+}
