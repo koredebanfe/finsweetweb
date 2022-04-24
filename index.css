@@ -44,10 +44,15 @@ nav {
     font-size: 0.9em;
 }
 
+.finsweet {
+    max-width: 1300px;
+    padding: 0 10em;
+}
+
 .finsweet__goal {
     margin-top: 3em;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .finsweet__goal h1 {
@@ -71,4 +76,19 @@ nav {
     color: white;
     margin-top: 1em;
     text-decoration: none;
+}
+
+.finsweet__services {
+    background-color: #E2E6E9;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form {
+    max-width: 625px;
+}
+
+.form input {
+    padding: 5px;
+    max-width: 625px;
 }
