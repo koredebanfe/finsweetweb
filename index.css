@@ -237,3 +237,11 @@ nav {
     margin: 0 auto;
     margin-bottom: 1em;
 }
+
+.finsweeet__offer__view__all p{
+    margin-top: 1em;
+    margin-bottom: 5em;
+    text-align: left;
+    display: flex;
+    align-self: flex-end;
+}
