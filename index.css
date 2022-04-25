@@ -75,17 +75,26 @@ li {
 
 .finsweet__goal__rating{
     background-image: url("./homeimages/mechanicman.png");
-    max-width: 70vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 90vw;
+    height: 30vh;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
 .finsweet__goal__rating div{
-    max-width: 282px;
     background-color: white;
+    border-radius: 30%;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
+.rating {
+    display: flex;
+}
 .button {
     display: inline-block;
     max-width: 203px;
