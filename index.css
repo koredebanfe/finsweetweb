@@ -271,5 +271,33 @@ nav {
     font-size: 18px;
     padding: 7px 15px;
     border-radius: 5px;
-    
+}
+
+.finsweet__contact__experience {
+    display: flex;
+    justify-content: space-between;
+    background-color: #E2E6E9;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    font-weight: 600;
+}
+
+.experience {
+    color: #661CE7;
+    font-weight: 800px;
+    font-size: 2em;
+}
+
+/* **************finsweet brand section************* */
+.finsweet__brands h1 {
+    font-weight: 700;
+    font-size: 2em;
+    text-align: center;
+    padding-top: 3em;
+}
+
+.finsweet__brands img {
+    display: inline-block;
+    width: 180px;
+    margin-top: 1em;
 }
