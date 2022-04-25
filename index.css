@@ -16,35 +16,38 @@ body {
     font-family: 'Manrope', sans-serif;
 }
 
-.nav__logo {
-    width: 122px;
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+    margin-bottom: 4em;
 }
 
 .nav__contact{
-    max-width: 90vw;
     display: flex;
     justify-content: space-around;
 }
 
 .nav__links {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     list-style-type: none;  
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
 }
 
 .nav__links a {
     text-decoration: none;
+    color: #1E1B1B;
 }
 
 .nav__contact img {
     background-color: #61C3A1;
     padding: 6px;
     border-radius: 50%;
+}
+
+li {
+    margin-right: 2em;
+    font-size: 18px;
 }
 
 .nav__contact h3,
