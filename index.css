@@ -200,7 +200,7 @@ nav {
 
 .finsweet__offer div {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(12em, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(11em, 1fr));
     max-width: 800px;
     justify-content:center;
     align-items: stretch;
@@ -238,10 +238,38 @@ nav {
     margin-bottom: 1em;
 }
 
-.finsweeet__offer__view__all p{
+
+
+/* .finsweeet__offer__view__all p{
     margin-top: 1em;
     margin-bottom: 5em;
     text-align: left;
     display: flex;
     align-self: flex-end;
+} */
+
+.finsweet__contact__form {
+    background: url(./homeimages/car.png) left top no-repeat, url(./homeimages/pliers.png) right top no-repeat;
+    background-size: 50vw, 50vw,contain;
+    max-height: 40vw;
+}
+
+.finsweet__contact__form div {
+    width: 30vw;
+    margin: auto;
+    background-color: #FF6433;
+    padding: 100px 30px;
+    color: whitesmoke;
+}
+
+.finsweet__contact__form a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #1E1B1B;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 7px 15px;
+    border-radius: 5px;
+    
 }
