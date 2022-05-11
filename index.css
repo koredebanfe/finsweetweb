@@ -28,6 +28,10 @@ nav {
     justify-content: space-around;
 }
 
+/* img {
+    min-width: 100%;
+    height: auto;
+} */
 .nav__links {
     display: flex;
     justify-content: space-around;
@@ -411,15 +415,243 @@ li {
     margin-top: 1em;
 }
 
+/**********finsweet footer***************/
+
 .footer {
     background-color: #1E1B1B;
     color: white;
     margin-bottom: 0;
+    padding: 3em 2em;
+}
+
+.social {
+    max-width: 20%;
+    margin-bottom: 3em;
+}
+
+.social div img {
+    margin-right: 1em;
+}
+
+.social h3 {
+    margin-bottom: 3em;
 }
 
 .footer__top {
     display: flex;
+    justify-content: space-around;
+}
+
+footer .nav__links a {
+    color: white;
+}
+
+.address__title {
+    font-size: 0.7em;
+    color: #E2E6E9;
+    opacity: 0.8;
+}
+
+.address div {
+    margin-bottom: 2em;
+    line-height: 1.5em;
 }
 
 
+@media only screen and (max-width:700px){
+    .footer__top {
+       flex-direction: column;
+    }
+
+    .social {
+        min-width: 80vw;
+        display: flex;
+        flex-direction: column;
+        min-width: 80vw;
+        align-items: center;
+    }
+
+    footer nav {
+        display: flex;
+        justify-content: space-between;
+    
+    }
+    
+    footer .nav__links  {
+        display: flex;
+        flex-direction: column;
+        min-width: 20vw;
+    }
+
+    footer .nav__links li {
+        margin-bottom: 1em;
+    }
+    footer nav div {
+        align-self: flex-end;
+        margin-top: 3em;
+    }
+}
+
+
+/**********service page styling***************/
+
+header {
+    background-image: url(./homeimages/engine\ open.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+    max-width: 1278px;
+}
+header article {
+    background-color: #1E1B1B;
+    padding: 4em 2em;
+    max-width: 45em;
+}
+header h1 {
+    font-weight: 800;
+    color: #F2F2F2;
+    font-family: Manrope;
+    font-size: 4em;
+}
+
+header p {
+    font-weight: 500;
+    color: #F2F2F2;
+    line-height: 175%;
+}
+
+/**********finsweet diagnostic section**************/
+.finsweet__diagnostics {
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+    padding: 5em 7em;
+}
+
+.finsweet__diagnostics article {
+    max-width: 624px;
+}
+
+.finsweet__diagnostics .finsweet__offer {
+    max-width: 40%;
+}
+
+.finsweet__diagnostics h3 {
+    font-weight: 3em;
+    margin: 1em 0;
+    font-weight: 700;
+}
+
+.finsweet__diagnostics p {
+    color: #232536;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.finsweet__diagnostics article p:last-child {
+    font-weight: 0.9em;
+    margin: 3em 0;
+}
+
+@media only screen and (max-width:700px) {
+    .finsweet__diagnostics {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .finsweet__diagnostics .finsweet__offer {
+        max-width: 100%;
+    }
+}
+
+/********service how section styling***********/
+
+.services__how,
+.service__care{
+    display: flex;
+    justify-content: space-between;
+    margin: 4em 0;
+    padding: 5em 8em;
+}
+
+
+
+.services__how__right,
+.service__care__right {
+    padding: 2em;
+    min-width: 60%;
+}
+
+.services__how__left,
+.service__care__left {
+    display: flex;
+    column-gap: 5px;
+    justify-content: space-between;
+}
+
+
+.services__how__left img,
+.service__care__left img{
+        margin: 0 auto;
+        max-width: 20vw;
+    }
+
+.services__how__right p,
+.service__care__right p {
+    font-size: 0.9em;
+    color: #1E1B1B;
+    font-weight: 600;
+    line-height: 1.8em;
+}
+
+.services__how__right img {
+    background-color: #00D289;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.services__how__right h3,
+.service__care__right h3 {
+    font-weight: 700;
+    font-size: 3em;
+    color: #1E1B1B;
+    margin-bottom: 1em;
+}
+
+.services__how__right div {
+    display: flex;
+    margin-bottom: 1em;
+}
+
+
+
+@media only screen and (max-width:700px) {
+    .services__how__left,
+    .service__care__left {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        gap: -3em;
+    }
+
+    .service__care {
+        display: flex;
+        
+    }
+
+    .services__how__left img,
+    .service__care__left img{
+        margin: 0 auto;
+        max-width: 40vw;
+    }
+
+    .services__how,
+    .service__care {
+        flex-direction: column-reverse;
+        padding: 2em 1em 0;
+        min-width: 100vw;
+    }
+}
 
