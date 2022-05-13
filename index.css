@@ -494,6 +494,7 @@ li {
 /******FAQ Styling******/
 .finsweet__faq {
     background-color: #E2E6E9;
+    padding-bottom: 2em;
 }
 
 .finsweet__faq > div {
@@ -502,14 +503,21 @@ li {
     background-color: #FFFFFF;
     margin-bottom: 1em;
     padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+}
 
+.btn {
+    font-size: 1.5em;
+    background-color: #FF6433;border-radius: 5px;
+    padding: 0.1em 0.3em;
 }
 .finsweet__faq h3 {
     font-weight: 700;
     font-size: 3em;
     color: #1E1B1B;
     text-align: center;
-    padding: 2em 0 3em;
+    padding: 2em 0 1em;
 
 }
 
