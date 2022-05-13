@@ -61,6 +61,24 @@ li {
     font-size: 0.9em;
 }
 
+.vehicle > div {
+    display: flex;
+    margin-top: 2vw;
+}
+
+.vehicle .image {
+    align-self: center;
+}
+
+.open__hours {
+    margin-left: 15px;
+}
+
+.open__hours h5 {
+    color: #939191;
+    margin-bottom: 5px;
+}
+
 @media only screen and (max-width: 900px) {
     li {
         margin-right: 1vw;
