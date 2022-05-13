@@ -68,7 +68,9 @@ li {
     } 
 }
 
-
+.finsweet {
+    padding: 2em 7em;
+}
 
 .finsweet__goal {
     margin-top: 7em;
@@ -77,14 +79,15 @@ li {
 }
 
 .finsweet__goal h1 {
-    max-width: 60vw;
+    max-width: 40vw;
     font-weight: 800;
     font-size: 2em;
     line-height: 1.2em;
 }
 
- 
-
+.finsweet__goal__rating img {
+    height: 20vw;
+}
 .vehicle {
     align-self: center;
 }
@@ -92,12 +95,12 @@ li {
 
 @media only screen and (max-width: 700px) {
     .finsweet__goal {
-        display: flex;
+        margin: 0 auto;
         background-image: url(./homeimages/mechanicman.png);
         padding: 2em 4em;
         color: white;
         flex-direction: column-reverse;
-        margin: 1em;
+        margin-top: 2em;
         max-width: 80vw;
     }
 
@@ -135,7 +138,6 @@ li {
     
 }
 
-
 .button {
     display: inline-block;
     max-width: 203px;
@@ -150,7 +152,6 @@ li {
 /***********finsweet service section styling***********/
 
 .finsweet__services {
-    
     display: flex;
     justify-content: space-between;
     padding-top: 3em;
@@ -218,11 +219,6 @@ li {
 }
 
 @media only screen and (max-width: 900px) {
-    .finsweet__services {
-        width: 80vw;
-        padding: 3em 20px;
-    }
-
     .car__servicing {
         max-width: 80vw;
         margin: 0 auto;
@@ -296,6 +292,10 @@ li {
        align-items: center;
        padding: 2em 20px;
     }
+
+    .finsweet__process h3 {
+        font-size: 1.2em;
+    }
 }
 
  /*************finsweet offer************/
@@ -355,7 +355,7 @@ li {
 
 .finsweet__contact__form {
     background: url(./homeimages/car.png) left top no-repeat, url(./homeimages/pliers.png) right top no-repeat;
-    background-size: 50vw, 50vw,contain;
+    background-size: 50vw, 50vw, contain;
     max-height: 40vw;
 }
 
@@ -406,7 +406,7 @@ li {
     }
 
     .finsweet__contact__form h3 {
-        font-size: 0.8em;
+        font-size: 2vw;
     }
 }
 
@@ -434,12 +434,15 @@ li {
 
 .finsweet__testimonial {
     background-color: #F2F2F2;
-    padding: 2em 0 4em;
+    padding: 5em 0 4em;
 }
 
 .finsweet__testimonial > div{
-    display: flex;
-    justify-content: space-around;
+    padding: 2em 4em;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(35vw, 1fr));
+   justify-content: space-around;
+    column-gap: 10px;
 }
 
 
@@ -457,7 +460,7 @@ li {
     background-color: white;
     margin: 0 auto;
     border-radius: 5px;
-    padding: 1em 3em;
+    padding: 4em 3em;
     
 }
 
@@ -487,6 +490,7 @@ li {
     }
 
     .finsweet__testimonial > div {
+        display: flex;
         flex-direction: column;
     }
 }
@@ -512,6 +516,12 @@ li {
     background-color: #FF6433;border-radius: 5px;
     padding: 0.1em 0.3em;
 }
+
+.finsweet__faq h6 {
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
 .finsweet__faq h3 {
     font-weight: 700;
     font-size: 3em;
@@ -519,6 +529,12 @@ li {
     text-align: center;
     padding: 2em 0 1em;
 
+}
+
+@media only screen and (max-width:700px) {
+    .finsweet__faq > div {
+        min-width: 80vw;
+    }
 }
 
 /**********finsweet footer***************/
