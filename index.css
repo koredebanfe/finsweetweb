@@ -18,7 +18,7 @@ body {
 
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 1em;
    
 }
@@ -28,10 +28,12 @@ nav {
     justify-content: space-around;
 }
 
-/* img {
-    min-width: 100%;
-    height: auto;
-} */
+.finsweet__toogle {
+    display: none;
+}
+
+
+
 .nav__links {
     display: flex;
     justify-content: space-around;
@@ -57,6 +59,13 @@ li {
 .nav__contact h3,
 .nav__contact p {
     font-size: 0.9em;
+}
+
+@media only screen and (max-width: 900px) {
+    li {
+        margin-right: 1vw;
+        font-size: 3vw;
+    } 
 }
 
 
@@ -87,7 +96,6 @@ li {
         background-image: url(./homeimages/mechanicman.png);
         padding: 2em 4em;
         color: white;
-        font-size: 2em;
         flex-direction: column-reverse;
         margin: 1em;
         max-width: 80vw;
@@ -97,28 +105,34 @@ li {
         display: none;
     }
 
-    .finsweet__goal h1 {
+    .finsweet__goal .vehicle h1 {
         max-width: 60vw;
-        font-size: 3rem;
+        font-size: 2rem;
         font-weight: 800;
         line-height: 1.2em;
+        margin-bottom: 1em;
+        color: white;
     }
     
 
     .vehicle h1 {
         width: 90vw;
         margin-top: 2em;
-        font-size: 0.8em;
     }
 
     .finsweet__services{
         display: flex;
         flex-direction: column;
-        width: 90vw;
-        margin: 0;
-        padding: 4em;
         font-size: 0.8em;
+      
     }
+
+    .finsweet .finsweet__services h4 {
+        font-size: 1.5em;
+        background-color: white;
+    }
+
+    
 }
 
 
@@ -136,12 +150,13 @@ li {
 /***********finsweet service section styling***********/
 
 .finsweet__services {
-    background-color: #E2E6E9;
+    
     display: flex;
     justify-content: space-between;
     padding-top: 3em;
     margin-top: 3em;
     padding-bottom: 4em;
+    background-color: #E2E6E9;
 }
 
 .finsweet__services h1 {
@@ -415,6 +430,14 @@ li {
     margin-top: 1em;
 }
 
+/****finsweet testimony section****/
+
+.finsweet__testimonial {
+    background-color: #F2F2F2;
+    
+}
+
+
 /**********finsweet footer***************/
 
 .footer {
@@ -496,15 +519,27 @@ footer .nav__links a {
 /**********service page styling***************/
 
 header {
-    background-image: url(./homeimages/engine\ open.png);
-    background-position: right top;
+    background-image: url(./homeimages/ourservicesbg.png);
+    background-position: left top;
     background-repeat: no-repeat;
     max-width: 1278px;
+    display: flex;
+    margin: 5em 7em;
 }
 header article {
     background-color: #1E1B1B;
     padding: 4em 2em;
-    max-width: 45em;
+    margin-left: 50vw;
+}
+
+@media only screen and (max-width: 700px) {
+    header {
+        background-image: none;
+    }
+
+    header article {
+        margin: 0;
+    }
 }
 header h1 {
     font-weight: 800;
@@ -576,8 +611,6 @@ header p {
     padding: 5em 8em;
 }
 
-
-
 .services__how__right,
 .service__care__right {
     padding: 2em;
@@ -628,6 +661,10 @@ header p {
 
 
 @media only screen and (max-width:700px) {
+    header {
+        margin: 0 auto;
+        min-width: 80vw;
+    }
     .services__how__left,
     .service__care__left {
         margin: 0 auto;
