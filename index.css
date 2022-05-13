@@ -434,9 +434,84 @@ li {
 
 .finsweet__testimonial {
     background-color: #F2F2F2;
+    padding: 2em 0 4em;
+}
+
+.finsweet__testimonial > div{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.finsweet__testimonial h3 {
+    font-size: 3em;
+    color: #1E1B1B;
+    line-height: 67px;
+    font-weight: 700;
+    text-align: center;
+    margin: 1em 0;
+}
+
+.finsweet__testimonial__section {
+    min-width: 15vw;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 1em 3em;
     
 }
 
+.finsweet__testimonial__section div p {
+    margin-left: 15px;
+    align-self: center;
+}
+
+.finsweet__testimonial__section > div {
+    display: flex;
+}
+
+.name {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.city {
+    font-size: 600;
+    color: #939191;
+}
+
+@media only screen and (max-width:900px) {
+    .finsweet__testimonial__section {
+        margin-bottom: 1em;
+        width: 80vw;
+    }
+
+    .finsweet__testimonial > div {
+        flex-direction: column;
+    }
+}
+
+/******FAQ Styling******/
+.finsweet__faq {
+    background-color: #E2E6E9;
+}
+
+.finsweet__faq > div {
+    width: 40vw;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    margin-bottom: 1em;
+    padding: 1em 2em;
+
+}
+.finsweet__faq h3 {
+    font-weight: 700;
+    font-size: 3em;
+    color: #1E1B1B;
+    text-align: center;
+    padding: 2em 0 3em;
+
+}
 
 /**********finsweet footer***************/
 
