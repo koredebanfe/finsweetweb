@@ -1,811 +1,102 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
-
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 1em;
+}
+
+section {
+    padding: 2em;
+    
 }
 
 img {
     max-width: 100%;
     height: auto;
 }
-
-body {
-    font-size: 16px;
-    font-family: 'Manrope', sans-serif;
+.sedans {
+    background-color: hsl(31, 77%, 52%);
 }
 
-nav {
-    display: flex;
-    justify-content: space-around;
+.sedans a {
+    color: hsl(31, 77%, 52%);
+}
+
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.suvs a {
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.luxury a {
+    color: hsl(179, 100%, 13%);
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 3vw;
+}
+
+h2 {
+    color: hsl(0, 0%, 95%);
+    font-weight: 900;
     margin-top: 1em;
-   
+    margin-bottom: 1em;
+    text-transform: uppercase;
 }
 
-.nav__contact{
-    display: flex;
-    justify-content: space-around;
-}
-
-.finsweet__toogle {
-    display: none;
-}
-
-
-
-.nav__links {
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;  
-}
-
-.nav__links a {
+a {
     text-decoration: none;
-    color: #1E1B1B;
-}
-
-.nav__contact img {
-    background-color: #61C3A1;
-    padding: 6px;
-    border-radius: 50%;
-}
-
-li {
-    margin-right: 2em;
-    font-size: 18px;
-}
-
-.nav__contact h3,
-.nav__contact p {
-    font-size: 0.9em;
-}
-
-.vehicle > div {
-    display: flex;
-    margin-top: 2vw;
-}
-
-.vehicle .image {
-    align-self: center;
-}
-
-.open__hours {
-    margin-left: 15px;
-}
-
-.open__hours h5 {
-    color: #939191;
-    margin-bottom: 5px;
-}
-
-@media only screen and (max-width: 900px) {
-    li {
-        margin-right: 1vw;
-        font-size: 3vw;
-    } 
-}
-
-.finsweet {
-    padding: 2em 7em;
-}
-
-.finsweet__goal {
-    margin-top: 7em;
-    display: flex;
-    justify-content: space-between;
-}
-
-.finsweet__goal h1 {
-    max-width: 40vw;
-    font-weight: 800;
-    font-size: 2em;
-    line-height: 1.2em;
-}
-
-.finsweet__goal__rating img {
-    height: 20vw;
-}
-.vehicle {
-    align-self: center;
-}
-
-
-@media only screen and (max-width: 700px) {
-    .finsweet__goal {
-        margin: 0 auto;
-        background-image: url(./homeimages/mechanicman.png);
-        padding: 2em 4em;
-        color: white;
-        flex-direction: column-reverse;
-        margin-top: 2em;
-        max-width: 80vw;
-    }
-
-    .finsweet__goal__rating{
-        display: none;
-    }
-
-    .finsweet__goal .vehicle h1 {
-        max-width: 60vw;
-        font-size: 2rem;
-        font-weight: 800;
-        line-height: 1.2em;
-        margin-bottom: 1em;
-        color: white;
-    }
-    
-
-    .vehicle h1 {
-        width: 90vw;
-        margin-top: 2em;
-    }
-
-    .finsweet__services{
-        display: flex;
-        flex-direction: column;
-        font-size: 0.8em;
-      
-    }
-
-    .finsweet .finsweet__services h4 {
-        font-size: 1.5em;
-        background-color: white;
-    }
-
-    
-}
-
-.button {
     display: inline-block;
-    max-width: 203px;
-    background-color: #FF6433;
-    border-radius: 12px;
-    padding: 6px 10px;
-    color: white;
-    margin-top: 2em;
-    text-decoration: none;
-}
-
-/***********finsweet service section styling***********/
-
-.finsweet__services {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 3em;
+    padding: 0.5em 1em;
+    background-color: white;
     margin-top: 3em;
-    padding-bottom: 4em;
-    background-color: #E2E6E9;
-}
-
-.finsweet__services h1 {
-    font-weight: 800;
-    font-size: 3em;
-    font-family: 'Manrope', sans-serif;
-}
-
-.car__servicing{
-    max-width: 40vw;
-}
-
-.car__servicing article > div {
-    display: flex;
-    justify-content: space-between;
-}
-
-.more__info {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 2em;
-    text-align: left;
-}
-
-.form {
-    text-align: center;
-    margin-top: 4em;
-}
-
-.form input {
-    padding: 1em;
-    max-width: 100vw;
-    margin-top: 1em;
-}
-
-.car__servicing h4 {
-    font-weight: 800;
-    font-size: 1.5em;
-    margin-top: 1em;
+    border-radius: 40px;
     margin-bottom: 1em;
+    font-size: 2vw;
 }
 
-.form h3 {
-    font-size: 1.4em;
-    margin-bottom: 1em;
-}
-.service__image img {
-    height: 15px;
-}
-
-.service__image {
-    margin-top: 30px;
-    background-color: white;
-    height: 20px;
-    display: flex;
-    align-items: center;
-    padding: 15px 6px;
-    border-radius: 50px;
-}
-
-@media only screen and (max-width: 900px) {
-    .car__servicing {
-        max-width: 80vw;
-        margin: 0 auto;
-    }
-
-    .finsweet__services h1 {
-        font-size: 2em;
-        max-width: 100vw;
-    }
-}
-
-/*********** finsweet process section************* */
-
-.finsweet__process {
-    display: flex;
-    justify-content: space-around;
-    max-width: 1206px;
-    margin-top: 4em;
-    margin-bottom: 3em;
-
-}
-
-.finsweet__process__left {
-    max-width: 524px;
-    align-self: center;
-}
-
-.finsweet__process__left h2 {
-    font-weight: 800;
-    font-family: manrope, sans-serif;
-    font-weight: 58px;
-    max-width: 12em;
-}
-
-.finsweet__process__left p {
-    max-width: 18em;
-    line-height: 1.5em;
-    margin-top: 1em;
-}
-
-.finsweet__process__right {
-    max-width: 432px;
-}
-
-.number {
-    background-color: #661CE7;
-    border-radius: 50%;
-    padding: 10px;
+a:hover {
     color: white;
-    margin-right: 1em;
+    border: 2px solid white;
 }
 
-.finsweet__process__right h3 {
-    margin-bottom: 1em;
-    margin-top: 1em;
-    font-size: 1.5em;
+.sedans a:hover {
+    background-color: hsl(31, 77%, 52%);
 }
 
-.finsweet__process__right p {
-    padding-left: 2.5em;
-    border-left: 2px dashed #FF6433;
-    margin-left: 1.5em;
-    opacity: 0.6;
-    font-weight: 600;
-    font-size: 0.9em;
+.suvs a:hover {
+    background-color: hsl(184, 100%, 22%);
 }
 
-@media only screen and (max-width: 700px) {
-    .finsweet__process {
-       flex-direction: column;
-       align-items: center;
-       padding: 2em 20px;
-    }
-
-    .finsweet__process h3 {
-        font-size: 1.2em;
-    }
+.luxury a:hover {
+    background-color: hsl(179, 100%, 13%);
 }
 
- /*************finsweet offer************/
-
-.finsweet__offer {
-    background-color: #E2E6E9;
-    padding-top: 4em;
-}
-
-.finsweet__offer div {
+.grid--main {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(11em, 1fr));
-    max-width: 800px;
-    justify-content:center;
-    align-items: stretch;
-    margin-left: 3.5em;
-    
-}
-.finsweet__offer figure {
-    background-color: white;
-    text-align: center;
-    margin-bottom: 0.1em;
-    padding: 2em;
-    width: 10em;
+    grid: repeat(6, auto)/repeat(5, 1fr);
 }
 
-.finsweet__offer figure:hover {
-    background-color: #FF6433;
+.box-1 {
+    background-color: orange;
+    grid-area: 1/4;
 }
-
-.finsweet__offer p {
-    text-align: center;
-    font-weight: 600;
-    font-size: 24px;
-    color: #1E1B1B;
-    letter-spacing: -0.03em;
-    margin-bottom: 1em;
-}
-
-.finsweet__offer h3{
-    max-width: 15.5em;
-    text-align: center;
-    font-weight: 800;
-    font-size: 2em;
-    color: #1E1B1B;
-    margin: 0 auto;
-    margin-bottom: 1em;
-}
-
-.finsweeet__offer__view__all p {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 2em;
-}
-
-/**********finsweet contact**************/
-
-.finsweet__contact__form {
-    background: url(./homeimages/car.png) left top no-repeat, url(./homeimages/pliers.png) right top no-repeat;
-    background-size: 50vw, 50vw, contain;
-    max-height: 40vw;
-}
-
-.finsweet__contact__form div {
-    width: 30vw;
-    margin: auto;
-    background-color: #FF6433;
-    padding: 100px 30px;
-    color: whitesmoke;
-}
-
-.finsweet__contact__form a {
-    display: inline-block;
-    text-decoration: none;
-    color: white;
-    background-color: #1E1B1B;
-    font-weight: 600;
-    font-size: 18px;
-    padding: 7px 15px;
-    border-radius: 5px;
-}
-
-.finsweet__contact__experience {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
-    gap: 10px;
-    background-color: #E2E6E9;
-    padding-top: 2em;
-    padding-bottom: 2em;
-    font-weight: 600;
-    text-align: center;
-}
-
-.finsweet__contact__experience div {
-    margin-bottom: 2em;
-}
-
-.experience {
-    color: #661CE7;
-    font-weight: 800px;
-    font-size: 2em;
-}
-
-@media only screen and (max-width: 900px) {
-    .finsweet__contact__form div{
-        max-width: 100vw;
-        padding: 1vw 10px;
-    }
-
-    .finsweet__contact__form h3 {
-        font-size: 2vw;
-    }
-}
-
-@media only screen and (max-width: 1000px) {
-    .finsweet__contact__form div {
-        padding: 0.8vw 10px;
-    }
-}
-
-/* **************finsweet brand section************* */
-.finsweet__brands h1 {
-    font-weight: 700;
-    font-size: 2em;
-    text-align: center;
-    padding-top: 3em;
-}
-
-.finsweet__brands img {
-    display: inline-block;
-    width: 180px;
-    margin-top: 1em;
-}
-
-/****finsweet testimony section****/
-
-.finsweet__testimonial {
-    background-color: #F2F2F2;
-    padding: 5em 0 4em;
-}
-
-.finsweet__testimonial > div{
-    padding: 2em 4em;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(35vw, 1fr));
-   justify-content: space-around;
-    column-gap: 10px;
-}
-
-
-.finsweet__testimonial h3 {
-    font-size: 3em;
-    color: #1E1B1B;
-    line-height: 67px;
-    font-weight: 700;
-    text-align: center;
-    margin: 1em 0;
-}
-
-.finsweet__testimonial__section {
-    min-width: 15vw;
-    background-color: white;
-    margin: 0 auto;
-    border-radius: 5px;
-    padding: 4em 3em;
-    
-}
-
-.finsweet__testimonial__section div p {
-    margin-left: 15px;
-    align-self: center;
-}
-
-.finsweet__testimonial__section > div {
-    display: flex;
-}
-
-.name {
-    font-size: 1.5em;
-    font-weight: 600;
-}
-
-.city {
-    font-size: 600;
-    color: #939191;
-}
-
-@media only screen and (max-width:900px) {
-    .finsweet__testimonial__section {
-        margin-bottom: 1em;
-        width: 80vw;
-    }
-
-    .finsweet__testimonial > div {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-/******FAQ Styling******/
-.finsweet__faq {
-    background-color: #E2E6E9;
-    padding-bottom: 2em;
-}
-
-.finsweet__faq > div {
-    width: 40vw;
-    margin: 0 auto;
-    background-color: #FFFFFF;
-    margin-bottom: 1em;
-    padding: 1em 2em;
-    display: flex;
-    justify-content: space-between;
-}
-
-.btn {
-    font-size: 1.5em;
-    background-color: #FF6433;border-radius: 5px;
-    padding: 0.1em 0.3em;
-}
-
-.finsweet__faq h6 {
-    font-weight: 600;
-    font-size: 1.5em;
-}
-
-.finsweet__faq h3 {
-    font-weight: 700;
-    font-size: 3em;
-    color: #1E1B1B;
-    text-align: center;
-    padding: 2em 0 1em;
-
-}
-
-@media only screen and (max-width:700px) {
-    .finsweet__faq > div {
-        min-width: 80vw;
-    }
-}
-
-/**********finsweet footer***************/
-
-.footer {
-    background-color: #1E1B1B;
-    color: white;
-    margin-bottom: 0;
-    padding: 3em 2em;
-}
-
-.social {
-    max-width: 20%;
-    margin-bottom: 3em;
-}
-
-.social div img {
-    margin-right: 1em;
-}
-
-.social h3 {
-    margin-bottom: 3em;
-}
-
-.footer__top {
-    display: flex;
-    justify-content: space-around;
-}
-
-footer .nav__links a {
-    color: white;
-}
-
-.address__title {
-    font-size: 0.7em;
-    color: #E2E6E9;
-    opacity: 0.8;
-}
-
-.address div {
-    margin-bottom: 2em;
-    line-height: 1.5em;
-}
-
-
-@media only screen and (max-width:700px){
-    .footer__top {
-       flex-direction: column;
-    }
-
-    .social {
-        min-width: 80vw;
-        display: flex;
-        flex-direction: column;
-        min-width: 80vw;
-        align-items: center;
-    }
-
-    footer nav {
-        display: flex;
-        justify-content: space-between;
-    
-    }
-    
-    footer .nav__links  {
-        display: flex;
-        flex-direction: column;
-        min-width: 20vw;
-    }
-
-    footer .nav__links li {
-        margin-bottom: 1em;
-    }
-    footer nav div {
-        align-self: flex-end;
-        margin-top: 3em;
-    }
-}
-
-
-/**********service page styling***************/
-
-header {
-    background-image: url(./homeimages/ourservicesbg.png);
-    background-position: left top;
-    background-repeat: no-repeat;
-    max-width: 1278px;
-    display: flex;
-    margin: 5em 7em;
-}
-header article {
-    background-color: #1E1B1B;
-    padding: 4em 2em;
-    margin-left: 50vw;
-}
-
-@media only screen and (max-width: 700px) {
-    header {
-        background-image: none;
-    }
-
-    header article {
-        margin: 0;
-    }
-}
-header h1 {
-    font-weight: 800;
-    color: #F2F2F2;
-    font-family: Manrope;
-    font-size: 4em;
-}
-
-header p {
-    font-weight: 500;
-    color: #F2F2F2;
-    line-height: 175%;
-}
-
-/**********finsweet diagnostic section**************/
-.finsweet__diagnostics {
-    background-color: #F5F5F5;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 2em;
-    padding: 5em 7em;
-}
-
-.finsweet__diagnostics article {
-    max-width: 624px;
-}
-
-.finsweet__diagnostics .finsweet__offer {
-    max-width: 40%;
-}
-
-.finsweet__diagnostics h3 {
-    font-weight: 3em;
-    margin: 1em 0;
-    font-weight: 700;
-}
-
-.finsweet__diagnostics p {
-    color: #232536;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 36px;
-}
-
-.finsweet__diagnostics article p:last-child {
-    font-weight: 0.9em;
-    margin: 3em 0;
-}
-
-@media only screen and (max-width:700px) {
-    .finsweet__diagnostics {
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-    }
-
-    .finsweet__diagnostics .finsweet__offer {
-        max-width: 100%;
-    }
-}
-
-/********service how section styling***********/
-
-.services__how,
-.service__care{
-    display: flex;
-    justify-content: space-between;
-    margin: 4em 0;
-    padding: 5em 8em;
-}
-
-.services__how__right,
-.service__care__right {
-    padding: 2em;
-    min-width: 60%;
-}
-
-.services__how__left,
-.service__care__left {
-    display: flex;
-    column-gap: 5px;
-    justify-content: space-between;
-}
-
-
-.services__how__left img,
-.service__care__left img{
-        margin: 0 auto;
-        max-width: 20vw;
-    }
-
-.services__how__right p,
-.service__care__right p {
-    font-size: 0.9em;
-    color: #1E1B1B;
-    font-weight: 600;
-    line-height: 1.8em;
-}
-
-.services__how__right img {
-    background-color: #00D289;
-    padding: 5px;
-    border-radius: 50%;
-}
-
-.services__how__right h3,
-.service__care__right h3 {
-    font-weight: 700;
-    font-size: 3em;
-    color: #1E1B1B;
-    margin-bottom: 1em;
-}
-
-.services__how__right div {
-    display: flex;
-    margin-bottom: 1em;
-}
-
-
-
-@media only screen and (max-width:700px) {
-    header {
-        margin: 0 auto;
-        min-width: 80vw;
-    }
-    .services__how__left,
-    .service__care__left {
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-around;
-        gap: -3em;
-    }
-
-    .service__care {
-        display: flex;
-        
-    }
-
-    .services__how__left img,
-    .service__care__left img{
-        margin: 0 auto;
-        max-width: 40vw;
-    }
-
-    .services__how,
-    .service__care {
-        flex-direction: column-reverse;
-        padding: 2em 1em 0;
-        min-width: 100vw;
-    }
-}
-

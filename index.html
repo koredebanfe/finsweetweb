@@ -1,525 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css">
-    <title>Finsweet</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | 3-column preview card component</title>
+
+ <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-    <nav class="nav">
-        <div class="nav__logo">
-            <img src="./homeimages/Logo.png" alt="finsweet logo">
-        </div>
-       
-
-        <article class="nav__contact">
-            <ul class="nav__links">
-                <li><a href="">Home</a></li>
-                <li><a href="">About us</a></li>
-                <li><a href="./services.html">Services</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-
-            <div>
-                <img src="./homeimages/Call.png" alt="whatsapp logo">
-            </div>
-
-            <div>
-                
-                <h3>
-                    Road Assistance
-                </h3>
-
-                <p>
-                    18002652452
-                </p>
-            </div>
-
-        </article>
-    </nav>
-
-    <section class="finsweet__goal finsweet">
-        <article class="vehicle">
-            <h1>
-                Get your vehicle service done online at one place
-            </h1>
-
-            <a href="#" class="button">
-                Book a service
-            </a>
-
-            <div>
-                <div class="image">
-                    <img src="./homeimages/time.png" alt="open hours">
-                </div>
-
-                <div class="open__hours">
-                    <h5>
-                        We are open
-                    </h5>
-
-                    <p>
-                        Monday to Friday 9:00 AM to 10:00AM
-                    </p>
-                </div>
-            </div>
-        </article>
-
-        <div class="finsweet__goal__rating">
-                <img src="./homeimages/bg-image.png" alt="start rating">
-        </div>
-    </section>
-
-    <section class="finsweet finsweet__services">
-
-        <article class="car__servicing">
-            <h1>
-                We are taking our car servicing seriously
-            </h1>
-
-            <article>
-                <div>
-                    <div class="service__image">
-                        <img src="./homeimages/customservice.png" alt="custom service">
-                    </div>
-
-                    <div>
-                        <h4>
-                            Convenient service 
-                        </h4>
-                        <p>
-                            Through True rich Attended does no end it his mother since real had half
-                            every him.
-                        </p>
-                    </div>
-                </div>
-
-                <div>
-                    <div class="service__image">
-                        <img src="./homeimages/mechanics.png" alt="mechanics">
-                    </div>
-
-                    <div>
-                        <h4>
-                            Expert mechanics 
-                        </h4>
-                        <p>
-                            Through True rich Attended does no end it his mother since real had half
-                            every him.
-                        </p>
-                    </div>
-                </div>
-
-                <div>
-                    <div class="service__image">
-                        <img src="./homeimages/pricing.png" alt="pricing">
-                    </div>
-
-                    <div>
-                        <h4>
-                            Transparent pricing  
-                        </h4>
-                        <p>
-                            Through True rich Attended does no end it his mother since real had half
-                            every him.
-                        </p>
-                    </div>
-                </div>
-            </article>
-
-            <p class="more__info">
-                Know more about us <a href="#"><img src="./homeimages/Arrow.png" alt="more info"></a>
-            </p>
-        </article>
-
-        <article class="form">
-            <h3>
-                Get a quote for the car service 
-            </h3>
-
-            <form action="#">
-                <input type="text" placeholder="Enter your location"> <br>
-                <input type="text" placeholder="Enter your location"> <br>
-                <input type="text" placeholder="Enter your location"> <br>
-                <input type="text" placeholder="Enter your location"> <br>
-
-                <submit class="button">
-                    Get your quote
-                </submit>
-            </form>
-        </article>
-    </section>
-
-    <section class="finsweet__process">
-        <article class="finsweet__process__left">
-            <h2>
-                We follow a clear process to help you out
-            </h2>
-
-            <p>
-                Through True rich Attended does no end it his mother since real had half
-                every him.
-            </p>
-
-           <a href="#" class="button">
-               Learn more
-           </a>
-        </article>
-
-        <article class="finsweet__process__right">
-                <div>
-                    <h3>
-                        <span class="number">
-                            01
-                        </span>
-                        Get a Quote
-                    </h3>
-                    <p>
-                        Through True rich Attended does no end it his mother since real had half
-                        every him.
-                    </p>
-                </div>
-    
-                <div>
-                    <h3>
-                        <span class="number">
-                            02
-                        </span>
-                        Book an Appointment
-                    </h3>
-                    <p>
-                        Through True rich Attended does no end it his mother since real had half
-                        every him.
-                    </p>
-                </div>
-        
-                <div>
-                    <h3>
-                        <span class="number">
-                            03
-                        </span>
-                        Get your Service Done
-                    </h3>
-                    <p>
-                        Through True rich Attended does no end it his mother since real had half
-                        every him.
-                    </p>
-                </div>
-           
-        </article>
-    </section>
-
-    <section class="finsweet__offer finsweet">
-        <p>
-            what we offer
-        </p>
-        <h3>
-            We offer full service auto repiar & maintenance
-        </h3>
-
+    <main>
         <div>
-            <figure>
-                <img src="./homeimages/diagnoticss.png" alt="diagnostic">
-                <figcaption>
-                    Diagnostics
-                </figcaption>
-            </figure>
-
-            <figure>
-                <img src="./homeimages/enginerepair.png" alt="engine repair">
-                <figcaption>
-                    Engine Repair
-                </figcaption>
-            </figure>
-
-            <figure>
-                <img src="./homeimages/wheelrepair.png" alt="wheel repair">
-                <figcaption>
-                    wheel Repair
-                </figcaption>
-            </figure>
-
-            <figure>
-                <img src="./homeimages/oilfilter.png" alt="oil filter">
-                <figcaption>
-                   Oil Filter
-                </figcaption>
-            </figure>
-
-            <figure>
-                <img src="./homeimages/bodywork.png" alt="body work">
-                <figcaption>
-                    Body Work
-                </figcaption>
-            </figure>
-
-            <figure>
-                <img src="./homeimages/batteries.png" alt="batteries">
-                <figcaption>
-                   Batteries
-                </figcaption>
-            </figure>
-
-            <figure>
-                <img src="./homeimages/insurance.png" alt="insurance">
-                <figcaption>
-                    Insurance Claim
-                </figcaption>
-            </figure>
-
-            <figure>
-                <img src="./homeimages/customservice.png" alt="custom service">
-                <figcaption>
-                   Custom Service
-                </figcaption>
-            </figure>
-        </div>
-
-        <div class="finsweeet__offer__view__all">
-            <p>
-                Learn about services <img src="./homeimages/Arrow.png" alt="more services">
-            </p>
-           
-        </div>
-    </section>
-
-    <section class="finsweet__contact">
-        <article class="finsweet__contact__form">
-            <div>
-                <h3>
-                    Get in touch with us for your service related query
-                </h3>
-                
-
-               <br>
-
+            <section class="sedans">
+                <img src="./images/icon-sedans.svg" alt="sedan">
+                <h2>
+                  Sedans
+                </h2>
+                <p>
+                  Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
+                  or on your next road trip.
+                </p>
                 <a href="#">
-                    Contact us
+                    Learn More
                 </a>
-            </div>
-            
-        </article>
-
-        <article class="finsweet__contact__experience finsweet">
-            <div>
-                <span class="experience">
-                    20+
-                </span> <br>
-                Professional
-            </div>
-
-            <div>
-                <span class="experience">
-                    10+
-                </span> <br>
-               Years Experience
-            </div>
-
-            <div>
-                <span class="experience">
-                    12K+
-                </span> <br>
-                Service Closed
-            </div>
-
-            <div>
-                <span class="experience">
-                    100%
-                </span> <br>
-                Customer Satisfaction
-            </div>
-        </article>
-    </section>
-
-    <section class="finsweet__brands">
-        <h1>
-            Brands we Serve
-        </h1>
-
-        <div class="finsweet">
-            <img src="./homeimages/logo-8 1 (1).png" alt="logoipsum">
-            <img src="./homeimages/logo-6.png" alt="logoipsum">
-            <img src="./homeimages/logo-7 1.png" alt="logoipsum">
-            <img src="./homeimages/logo-3.png" alt="logoipsum">
-            <img src="./homeimages/logo-1 1.png" alt="logoipsum">
-            <img src="./homeimages/logo-8 1 (1).png" alt="logoipsum">
-            <img src="./homeimages/logo-6.png" alt="logoipsum">
-            <img src="./homeimages/logo-7 1.png" alt="logoipsum">
-            <img src="./homeimages/logo-3.png" alt="logoipsum">
-            <img src="./homeimages/logo-1 1.png" alt="logoipsum">
+            </section>
+          
+            <section class="suvs">
+              <img src="./images/icon-suvs.svg" alt="suvs">
+              <h2>
+                Suvs
+              </h2>
+              <p>
+                  Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
+                  and off-road adventures.
+              </p>
+              <a href="#">
+                  Learn More
+              </a>
+             </section>
+          
+             <section class="luxury">
+              <img src="./images/icon-luxury.svg" alt="luxury">
+              <h2>
+               Luxury
+              </h2>
+              <p>
+                  Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
+                  rental and arrive in style.
+              </p>
+              <a href="#">
+                  Learn More
+              </a>
+            </section>
         </div>
-    </section>
 
-    <section class="finsweet__testimonial">
-        <h3>
-            Our customers say the nicest things about our service 
-        </h3>
-
-        <div>
-            <div class="finsweet__testimonial__section">
-                <div>
-                    <img src="./homeimages/jonathan.png" alt="jonathanimage">
-
-                    <p>
-                        <span class="name">Jonathan Vallem</span> <br>
-                        <span class="city">New York</span>
-                    </p>
-                </div>
-
-                <p>
-                     I have got my car repaired at finsweet many times before, they are good at what they do. not only did they repair my car
-                      in a short comprehensive look on all the working
-                </p>
-            </div>
-
-            <div class="finsweet__testimonial__section">
-                <div>
-                    <img src="./homeimages/smith.jpg" alt="smithimage">
-
-                    <p>
-                        <span class="name">Smith Johnson</span> <br>
-                        <span class="city">New York</span>
-                    </p>
-                </div>
-
-                <p>
-                     I have got my car repaired at finsweet many times before, they are good at what they do. not only did they repair my car
-                      in a short comprehensive look on all the working
-                </p>
-            </div>
+        <div class="grid">
+          <a href="./grid.html">Grid Design</a>
         </div>
-    </section>
+    </main>
 
-    <section class="finsweet__faq">
-        <h3>
-            Frequently Asked Questions
-        </h3>
-            <div>
-                <div>
-                    <h6>
-                        How do i schedule my cars appointment?
-                    </h6>
-
-                    <div>
-                        <p>
-                            I have got my car repaired at finsweet many times before, they are good at what they do. not only did they repair my car
-                             in a short comprehensive look on all the working
-                       </p>
-                    </div>
-                </div>
-    
-                <div>
-                    <p class="close btn">-</p>
-                </div>
-            </div>
-
-            <div>
-                <h6>
-                    What are the repair services provided?
-                </h6>
-    
-                <div>
-                    <!-- <span class="close">-</span> -->
-                    <span class="close btn">+</span>
-                </div>
-            </div>
-
-            <div>
-                <h6>
-                    How do i find auto body shops near me?
-                </h6>
-    
-                <div>
-                    <!-- <span class="close">-</span> -->
-                    <span class="close btn">+</span>
-                </div>
-            </div>
-
-            <div>
-                <h6>
-                    Genuine spare parts during car repair?
-                </h6>
-    
-                <div>
-                    <!-- <span class="close">-</span> -->
-                    <span class="close btn">+</span>
-                </div>
-            </div>
-    </section>
-
-    <footer class="footer">
-        <section class="footer__top">
-            <div class="social">
-                <h3>
-                    Get in touch with us for your service 
-                </h3>
-                
-                <div>
-                 <a href="#"><img src="./homeimages/facebook.png" alt="facebook"></a>
-                 <a href="#"><img src="./homeimages/twitter.png" alt="twitter"></a>
-                 <a href="#"><img src="./homeimages/Instagram.png" alt="instagram"></a>
-                 <a href="#"><img src="./homeimages/linkedin.png" alt="linkedin"></a>
-                </div>
-            </div>
-
-            <div class="address">
-                <div>
-                    <p class="address__title">
-                        Help line Number
-                    </p>
-
-                    <p>
-                        <span class="space">1800</span>
-                        <span class="space">265</span>
-                        <span class="space">24</span>
-                        <span class="space">52</span>
-                    </p>
-                </div>
-
-                <div>
-                    <p class="address__title">
-                        Address
-                    </p>
-                    <p>
-                        NH 234 Public Square San Franscisco 65368
-                    </p>
-                </div>
-
-                <div>
-                    <p class="address__title">
-                        We are open
-                    </p>
-                    <p>
-                        Monday to Friday 9:00 AM to 10:00 AM
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <nav>
-            <div class="nav__logo">
-                <img src="./homeimages/logowhite.png" alt="finsweet logo">
-            </div>
-           
-            <article class="nav__contact">
-                <ul class="nav__links">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About us</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
-    
-                
-    
-                <div>
-                    @ Copyright Finsweet 2021
-                </div>
-            </article>
-        </nav>
-    </footer>
+  
 </body>
 </html>
