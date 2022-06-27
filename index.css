@@ -96,7 +96,29 @@ a:hover {
     grid: repeat(6, auto)/repeat(5, 1fr);
 }
 
+.grid a:hover {
+    color: white;
+    border: 2px solid white;
+    background-color: coral;
+    
+}
+
 .box-1 {
     background-color: orange;
     grid-area: 1/4;
+}
+
+@media screen and (max-width:600px) {
+    main div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    p {
+        line-height: 3;
+    }
+
+    a {
+        font-size: 1.5em;
+    }
 }
